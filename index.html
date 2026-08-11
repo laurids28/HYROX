@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hyrox 01.11.</title>
+<meta name="description" content="Trainingsplan Hyrox Single Open, 01.11.2026">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Hyrox">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+:root{
+  --bg:#0f1115; --card:#171a21; --card2:#1e222b; --line:#2b3140;
+  --tx:#e8ebf1; --tx2:#a8b1c1; --tx3:#767f90;
+  --acc:#5aa9ff; --ok:#79d69f; --warn:#f2b65e; --hot:#f4817e;
+  --fs:1rem; --tap:46px;
+  --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+  --sat:env(safe-area-inset-top); --sab:env(safe-area-inset-bottom);
+}
+@media (prefers-color-scheme: light){
+  :root{ --bg:#f5f6f8; --card:#fff; --card2:#eef0f4; --line:#dde1e8;
+    --tx:#14181e; --tx2:#4b5462; --tx3:#767f90;
+    --acc:#0b62c4; --ok:#178054; --warn:#8f5a06; --hot:#c0322f; }
+}
+html[data-th="dark"]{ color-scheme:dark }
+html[data-th="light"]{ color-scheme:light;
+  --bg:#f5f6f8; --card:#fff; --card2:#eef0f4; --line:#dde1e8;
+  --tx:#14181e; --tx2:#4b5462; --tx3:#767f90;
+  --acc:#0b62c4; --ok:#178054; --warn:#8f5a06; --hot:#c0322f; }
+*{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--tx);font-size:var(--fs);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  line-height:1.55;-webkit-font-smoothing:antialiased;
+  padding-bottom:calc(66px + var(--sab));overscroll-behavior-y:contain}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+h1,h2,h3{margin:0;letter-spacing:-.02em;line-height:1.25}
+p{margin:0 0 .6em}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px;border-radius:6px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);padding:calc(var(--sat) + 10px) 16px 10px}
+.hrow{display:flex;align-items:center;gap:10px}
+.hrow h1{font-size:1.02em;font-weight:700;flex:1;min-width:0}
+.hrow h1 span{display:block;font-size:.72em;font-weight:500;color:var(--tx3);letter-spacing:0}
+.iconbtn{min-width:var(--tap);min-height:var(--tap);flex:0 0 auto;display:inline-flex;
+  align-items:center;justify-content:center;gap:1px;white-space:nowrap;
+  border-radius:12px;background:var(--card);border:1px solid var(--line);font-size:.82em;font-weight:700;color:var(--tx2)}
+.iconbtn sup{font-size:.72em;line-height:1}
+.iconbtn svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round}
+.bar{height:6px;background:var(--card2);border-radius:99px;overflow:hidden;margin-top:10px}
+.bar i{display:block;height:100%;background:var(--ok);border-radius:99px;transition:width .3s}
+.barlab{display:flex;justify-content:space-between;font-size:.72em;color:var(--tx3);margin-top:5px;
+  font-variant-numeric:tabular-nums}
+
+main{padding:16px 16px 24px;max-width:640px;margin:0 auto}
+
+/* cards */
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:0 0 14px}
+.card.acc{border-left:4px solid var(--acc)}
+.card.warn{border-left:4px solid var(--warn)}
+.card.hot{border-left:4px solid var(--hot)}
+.card.ok{border-left:4px solid var(--ok)}
+.ct{font-weight:700;font-size:.95em;margin-bottom:6px}
+.sub{color:var(--tx2);font-size:.86em}
+.tag{display:inline-block;font-size:.66em;font-weight:800;letter-spacing:.07em;text-transform:uppercase;
+  padding:3px 8px;border-radius:6px;vertical-align:2px}
+.t-run{background:rgba(90,169,255,.16);color:var(--acc)}
+.t-str{background:rgba(121,214,159,.16);color:var(--ok)}
+.t-hyx{background:rgba(242,182,94,.18);color:var(--warn)}
+.t-off{background:rgba(150,160,180,.16);color:var(--tx3)}
+.t-tst{background:rgba(244,129,126,.16);color:var(--hot)}
+
+/* today */
+.today .dt{font-size:.78em;color:var(--tx3);text-transform:uppercase;letter-spacing:.09em;font-weight:700}
+.today h2{font-size:1.5em;margin:6px 0 4px}
+.today .meta{font-size:.85em;color:var(--tx2);font-variant-numeric:tabular-nums}
+ul.steps{list-style:none;padding:0;margin:14px 0 0}
+ul.steps li{position:relative;padding:9px 0 9px 26px;border-bottom:1px solid var(--line);font-size:.92em}
+ul.steps li:last-child{border-bottom:none}
+ul.steps li::before{content:"";position:absolute;left:6px;top:1.05em;width:7px;height:7px;
+  border-radius:50%;background:var(--tx3)}
+ul.steps li.arrow{padding-left:26px;color:var(--tx2);font-size:.87em}
+ul.steps li.arrow::before{content:"→";background:none;left:4px;top:.55em;width:auto;height:auto;
+  color:var(--acc);font-weight:700;font-size:.95em}
+.big{width:100%;min-height:54px;border-radius:14px;font-weight:750;font-size:1em;
+  display:flex;align-items:center;justify-content:center;gap:9px;margin-top:16px;
+  background:var(--acc);color:#fff;border:1px solid transparent}
+.big[aria-pressed="true"]{background:var(--ok);color:#06231a}
+html[data-th="dark"] .big[aria-pressed="true"]{color:#04180f}
+.big.ghost{background:var(--card2);color:var(--tx);border-color:var(--line)}
+a.big{margin-top:10px;text-decoration:none}
+.big.coach{background:linear-gradient(135deg,#c96442,#a8502f);color:#fff;border-color:transparent}
+html[data-th="light"] .big.coach,
+@media (prefers-color-scheme: light){.big.coach{background:linear-gradient(135deg,#c96442,#9c4728)}}
+
+/* log fields */
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.f{display:flex;flex-direction:column;gap:5px}
+.f.full{grid-column:1/-1}
+.f label{font-size:.74em;font-weight:700;color:var(--tx3);text-transform:uppercase;letter-spacing:.06em}
+.f input,.f textarea,.f select{background:var(--card2);border:1px solid var(--line);color:var(--tx);
+  border-radius:11px;padding:12px;font:inherit;font-size:.92em;min-height:var(--tap);width:100%}
+.f textarea{min-height:84px;resize:vertical;font-family:inherit}
+.seg{display:flex;gap:6px}
+.seg button{flex:1;min-height:var(--tap);border-radius:11px;background:var(--card2);
+  border:1px solid var(--line);font-size:.86em;font-weight:650;color:var(--tx2)}
+.seg button[aria-pressed="true"]{background:var(--acc);color:#fff;border-color:transparent}
+
+/* week list */
+.wk{background:var(--card);border:1px solid var(--line);border-radius:16px;margin:0 0 14px;overflow:hidden}
+.wk>summary{padding:15px 16px;font-weight:700;cursor:pointer;list-style:none;display:flex;
+  gap:4px 8px;align-items:center;flex-wrap:wrap;min-height:var(--tap)}
+.wk>summary b{flex:0 0 auto}
+.wk>summary em{flex:1 1 auto;min-width:0}
+.wk>summary::-webkit-details-marker{display:none}
+.wk>summary b{font-size:.95em}
+.wk>summary em{font-style:normal;font-weight:500;color:var(--tx3);font-size:.8em}
+.wk>summary .km{flex:0 0 auto;margin-left:auto;font-size:.75em;color:var(--tx2);white-space:nowrap;
+  font-variant-numeric:tabular-nums;background:var(--card2);border-radius:99px;padding:3px 9px}
+.wbody{border-top:1px solid var(--line);padding:4px 16px 12px}
+.drow{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);
+  width:100%;text-align:left;min-height:var(--tap)}
+.drow:last-child{border-bottom:none}
+.drow .dd{font-size:.72em;color:var(--tx3);font-weight:700;width:34px;flex:0 0 34px;line-height:1.3}
+.drow .dd b{display:block;color:var(--tx);font-size:1.15em}
+.drow .di{flex:1;min-width:0}
+.drow .di .n{display:block;font-weight:650;font-size:.9em;line-height:1.35}
+.drow .di .m{display:block;font-size:.76em;color:var(--tx3);line-height:1.35}
+.drow .ck{width:26px;height:26px;flex:0 0 26px;border-radius:8px;border:2px solid var(--line);
+  display:grid;place-items:center;font-size:.8em;color:transparent}
+.drow[data-done="1"] .ck{background:var(--ok);border-color:var(--ok);color:#04180f}
+.drow[data-today="1"]{background:linear-gradient(90deg,color-mix(in srgb,var(--acc) 12%,transparent),transparent);
+  margin:0 -16px;padding-left:16px;padding-right:16px}
+
+/* tables */
+.tb{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:8px -4px 0}
+table{width:100%;border-collapse:collapse;font-size:.84em}
+th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.78em;text-transform:uppercase;letter-spacing:.06em;color:var(--tx3)}
+td.n{font-family:var(--mono);white-space:nowrap;font-size:.95em}
+tr:last-child td{border-bottom:none}
+
+/* streak */
+.dots{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.dots span{width:11px;height:11px;border-radius:3px;background:var(--card2);border:1px solid var(--line)}
+.dots span.on{background:var(--ok);border-color:var(--ok)}
+.dots span.tdy{outline:2px solid var(--acc);outline-offset:1px}
+
+/* tabbar */
+nav{position:fixed;bottom:0;left:0;right:0;z-index:30;display:flex;
+  background:color-mix(in srgb,var(--bg) 92%,transparent);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-top:1px solid var(--line);padding-bottom:var(--sab)}
+nav button{flex:1;min-height:62px;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;gap:3px;font-size:.68em;font-weight:700;color:var(--tx3);
+  letter-spacing:.02em}
+nav button svg{width:23px;height:23px;stroke:currentColor;fill:none;stroke-width:1.9;
+  stroke-linecap:round;stroke-linejoin:round}
+nav button[aria-selected="true"]{color:var(--acc)}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(78px + var(--sab));
+  background:var(--tx);color:var(--bg);padding:11px 18px;border-radius:99px;font-size:.85em;
+  font-weight:650;z-index:40;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.on{opacity:1}
+@media (prefers-contrast: more){ :root{--line:#6b7484} .sub,.f label{color:var(--tx2)} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hrow">
+    <h1>Hyrox Single · Open<span id="cd">–</span></h1>
+    <button class="iconbtn" id="fsBtn" aria-label="Schriftgröße ändern">A<sup>+</sup></button>
+    <button class="iconbtn" id="thBtn" aria-label="Hell/Dunkel umschalten"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 0 0 16" fill="currentColor" stroke="none"/></svg></button>
+  </div>
+  <div class="bar" role="progressbar" aria-labelledby="pgl" aria-valuemin="0" aria-valuemax="100" id="pgbar"><i style="width:0"></i></div>
+  <div class="barlab"><span id="pgl">Block 1 · 0/23 Einheiten</span><span id="kml">0 / 131 km</span></div>
+</header>
+
+<main id="view" tabindex="-1"></main>
+<p class="sr" id="live" role="status" aria-live="polite"></p>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<nav role="tablist" aria-label="Bereiche">
+  <button role="tab" data-tab="today" aria-selected="true" aria-controls="view">
+    <svg viewBox="0 0 24 24"><path d="M12 3v3M5.6 5.6l2.1 2.1M3 12h3M18 12h3M16.3 7.7l2.1-2.1"/><circle cx="12" cy="14" r="5"/><path d="M12 12v2.5l1.6 1"/></svg>Heute</button>
+  <button role="tab" data-tab="plan" aria-selected="false" aria-controls="view">
+    <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18M8 14h3M8 17h6"/></svg>Plan</button>
+  <button role="tab" data-tab="ref" aria-selected="false" aria-controls="view">
+    <svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M8 7h7M8 11h7"/></svg>Referenz</button>
+  <button role="tab" data-tab="log" aria-selected="false" aria-controls="view">
+    <svg viewBox="0 0 24 24"><path d="M4 19V9M9.3 19V4M14.7 19v-7M20 19v-11"/></svg>Fortschritt</button>
+</nav>
+
+<script>
+const D = {"race":"2026-11-01","goal":"1:15:00 (Stretch) / sub 1:25 (Plan)","sessions":[{"date":"2026-08-10","w":1,"type":"kraftB","title":"Kraft B — Zug & Carries","meta":"55–65 min · abends","km":0,"lines":["Warmup 8 min: Schulterkreisen, Pull-aparts, Scapula-Hangs an der Stange, Cat-Cow","Klimmzüge — 4 × 5–8 (oder Negative). Submaximal, nie bis zum Versagen","Einarmiges DB-Rudern — 4 × 10/Seite, abgestützt","Farmers Carry — 4 × 60 m @ 2×15 kg","Suitcase Carry (einseitig) — 3 × 40 m/Seite. Bestes Anti-Seitneige-Training für deinen Rücken","DB Hang Clean & Press — 4 × 8/Seite","Hollow Hold 3 × 30 s + Bird Dog 3 × 8/Seite"],"note":"Erste Einheit nach 3 Jahren Pause: alle Sätze mit 2–3 Wiederholungen im Tank beenden. RPE 6, nicht mehr."},{"date":"2026-08-11","w":1,"type":"easy","title":"Easy Run — 5 km","meta":"45 min · früh · 6:00–6:20 /km","km":5,"lines":["5 km bei 6:00–6:20 /km. Nasenatmung möglich, Gespräch problemlos","Danach: Rückenroutine (8 min) — ab heute jeden Tag"],"note":"Ja, das ist langsamer als du gewohnt bist. Genau das ist der Punkt."},{"date":"2026-08-12","w":1,"type":"quality","title":"Threshold — 3 × 6 min","meta":"50 min · 7 km total","km":7,"lines":["15 min Einlaufen locker","3 × 6 min @ 4:50–4:55 /km, dazwischen 90 s Trabpause","10 min Auslaufen"],"note":"Wenn der letzte Block wegbricht, war die Pace zu schnell — nicht du zu schwach."},{"date":"2026-08-13","w":1,"type":"kraftA","title":"Kraft A — Beine & Push","meta":"60–70 min · abends","km":0,"lines":["Warmup 8 min: Beinpendel, 90/90-Hüfte, 15 Glute Bridges, 10 Bodyweight-Lunges/Seite, Sprunggelenk-Mobility","DB Front-Rack Squat — 3 × 10 @ RPE 6","Bulgarian Split Squat — 3 × 10/Seite, Körpergewicht","Rumänisches Kreuzheben (RDL) — 3 × 10 leicht. Rücken neutral, Form vor Gewicht","DB Thruster — 3 × 12  (dein Wall-Ball-Ersatz: leicht, flüssig, viele Reps)","DB Schulterdrücken oder Push-ups — 3 × 10–12","Step-ups auf Bank/Stufe mit Hanteln — 3 × 12/Seite","Dead Bug 3 × 10/Seite + Side Plank 3 × 35 s/Seite"],"note":"Technik vor Gewicht. Split Squats ohne Zusatzgewicht, RDL mit leerer bzw. minimal beladener Stange. Du sollst am Samstag laufen können."},{"date":"2026-08-14","w":1,"type":"rest","title":"Ruhetag","meta":"0–15 min","km":0,"lines":["Rückenroutine + 5 min Hüftöffner","Sonst nichts"],"note":""},{"date":"2026-08-15","w":1,"type":"hyrox","title":"Compromised — 4 Runden","meta":"55 min · ~6,6 km · draußen","km":6.6,"lines":["10 min locker zum Park traben (= Warmup)","4 Runden: 800 m @ 4:55–5:05 + 10 Burpee Broad Jumps + 20 Walking Lunges (Körpergewicht)","10 min zurück traben"],"note":"BBJ-Technik: aus der Hüfte springen, nicht aus dem Rücken. Landung weich, Blick nach vorn."},{"date":"2026-08-16","w":1,"type":"long","title":"Long Run — 10 km","meta":"65 min · 6:00–6:15 /km","km":10,"lines":["10 km komplett locker bei 6:00–6:15 /km"],"note":"Der Long Run ist eine Grundlageneinheit, kein Test. Wenn du versucht bist schneller zu laufen: lass es."},{"date":"2026-08-17","w":2,"type":"kraftB","title":"Kraft B — Zug & Carries","meta":"55–65 min · abends","km":0,"lines":["Warmup 8 min: Schulterkreisen, Pull-aparts, Scapula-Hangs an der Stange, Cat-Cow","Klimmzüge — 4 × 5–8 (oder Negative). Submaximal, nie bis zum Versagen","Einarmiges DB-Rudern — 4 × 10/Seite, abgestützt","Farmers Carry — 4 × 80 m @ 2×20 kg","Suitcase Carry (einseitig) — 3 × 40 m/Seite. Bestes Anti-Seitneige-Training für deinen Rücken","DB Hang Clean & Press — 4 × 8/Seite","Hollow Hold 3 × 30 s + Bird Dog 3 × 8/Seite","Finisher: 3 Runden 10 Burpees + 20 Mountain Climbers + 30 s Plank"],"note":"Klimmzüge: eine Wiederholung mehr pro Satz als letzte Woche."},{"date":"2026-08-18","w":2,"type":"easy","title":"Easy Run — 7 km","meta":"45 min · früh · 6:00–6:20 /km","km":7,"lines":["7 km bei 6:00–6:20 /km","Danach Rückenroutine"],"note":""},{"date":"2026-08-19","w":2,"type":"quality","title":"Intervalle — 6 × 3 min","meta":"55 min · 9 km total","km":9,"lines":["15 min Einlaufen","6 × 3 min @ 4:25–4:30 /km, dazwischen 90 s Trabpause","10 min Auslaufen"],"note":"VO2max-Reiz. Die letzten zwei Intervalle sollen hart sein, aber gleich schnell wie die ersten."},{"date":"2026-08-20","w":2,"type":"kraftA","title":"Kraft A — Beine & Push","meta":"60–70 min · abends","km":0,"lines":["Warmup 8 min: Beinpendel, 90/90-Hüfte, 15 Glute Bridges, 10 Bodyweight-Lunges/Seite, Sprunggelenk-Mobility","DB Front-Rack Squat — 4 × 10","Bulgarian Split Squat — 3 × 10/Seite, 2×10–12 kg","Rumänisches Kreuzheben (RDL) — 3 × 10 leicht. Rücken neutral, Form vor Gewicht","DB Thruster — 3 × 15 @ 2×8–10 kg  (dein Wall-Ball-Ersatz: leicht, flüssig, viele Reps)","DB Schulterdrücken oder Push-ups — 3 × 10–12","Step-ups auf Bank/Stufe mit Hanteln — 3 × 12/Seite","Dead Bug 3 × 10/Seite + Side Plank 3 × 35 s/Seite"],"note":"Thruster mit hohen Wiederholungen statt schwer — das ist Wall-Ball-Vorbereitung, kein Krafttest."},{"date":"2026-08-21","w":2,"type":"rest","title":"Ruhetag","meta":"0–15 min","km":0,"lines":["Rückenroutine"],"note":""},{"date":"2026-08-22","w":2,"type":"hyrox","title":"Compromised — 5 Runden","meta":"70 min · ~7,4 km · draußen","km":7.4,"lines":["10 min zum Park traben","5 Runden: 800 m @ 4:50–5:00 + 12 Burpee Broad Jumps + 24 Walking Lunges","10 min zurück traben","Optional, falls ein Hügel in der Nähe ist: 6 × 30 s steil bergauf, gehend zurück = dein Sled-Push-Ersatz"],"note":"Starker Vorlehnen bergauf, kurze schnelle Schritte, Blick nach unten — genau die Sled-Position."},{"date":"2026-08-23","w":2,"type":"long","title":"Long Run — 12 km","meta":"75 min · 5:55–6:10 /km","km":12,"lines":["12 km bei 5:55–6:10 /km","Letzte 2 km optional bei 5:20"],"note":""},{"date":"2026-08-24","w":3,"type":"kraftB","title":"Kraft B — Zug & Carries","meta":"55–65 min · abends","km":0,"lines":["Warmup 8 min: Schulterkreisen, Pull-aparts, Scapula-Hangs an der Stange, Cat-Cow","Klimmzüge — 4 × 5–8 (oder Negative). Submaximal, nie bis zum Versagen","Einarmiges DB-Rudern — 4 × 10/Seite, abgestützt","Farmers Carry — 4 × 100 m @ 2×20 kg, unbroken","Suitcase Carry (einseitig) — 3 × 40 m/Seite. Bestes Anti-Seitneige-Training für deinen Rücken","DB Hang Clean & Press — 4 × 8/Seite","Hollow Hold 3 × 30 s + Bird Dog 3 × 8/Seite","Finisher: 3 Runden 10 Burpees + 20 Mountain Climbers + 30 s Plank"],"note":"Griffkraft ist im Rennen der Limiter, nicht die Beine. Distanz aufbauen, nicht Gewicht."},{"date":"2026-08-25","w":3,"type":"easy","title":"Easy Run — 8 km","meta":"50 min · früh · 6:00–6:20 /km","km":8,"lines":["8 km bei 6:00–6:20 /km","Danach Rückenroutine"],"note":""},{"date":"2026-08-26","w":3,"type":"quality","title":"Threshold — 5 × 5 min","meta":"60 min · 11 km total","km":11,"lines":["15 min Einlaufen","5 × 5 min @ 4:40–4:45 /km, dazwischen 75 s Trabpause","12 min Auslaufen"],"note":"Härteste Laufeinheit des Blocks. Gut essen vorher."},{"date":"2026-08-27","w":3,"type":"kraftA","title":"Kraft A — Beine & Push","meta":"60–70 min · letzte Einheit mit Hanteln","km":0,"lines":["Warmup 8 min: Beinpendel, 90/90-Hüfte, 15 Glute Bridges, 10 Bodyweight-Lunges/Seite, Sprunggelenk-Mobility","DB Front-Rack Squat — 4 × 8, RPE 7–8","Bulgarian Split Squat — 3 × 10/Seite, 2×12–14 kg","Rumänisches Kreuzheben (RDL) — 3 × 10 leicht. Rücken neutral, Form vor Gewicht","DB Thruster — 4 × 15  (dein Wall-Ball-Ersatz: leicht, flüssig, viele Reps)","DB Schulterdrücken oder Push-ups — 3 × 10–12","Step-ups auf Bank/Stufe mit Hanteln — 3 × 12/Seite","Dead Bug 3 × 10/Seite + Side Plank 3 × 35 s/Seite"],"note":"Letzte Equipment-Einheit vor dem Gym-Start. Volle Sätze, RPE 7–8 auf den Hauptübungen."},{"date":"2026-08-28","w":3,"type":"rest","title":"Ruhetag / Anreise","meta":"0–15 min","km":0,"lines":["Rückenroutine im Hotel/Zimmer","Nach langem Sitzen: 5 min Hüftbeuger dehnen"],"note":""},{"date":"2026-08-29","w":3,"type":"hyrox","title":"Compromised — 4 × 1000 m","meta":"75 min · ~7,4 km · nur Körpergewicht","km":7.4,"lines":["10 min einlaufen","4 Runden: 1000 m @ 4:45–4:55 + 15 Burpee Broad Jumps + 30 Walking Lunges","10 min auslaufen","Falls ein Rucksack dabei ist: 10–15 kg rein und die Lunges damit — kommt der Sandbag-Position am nächsten"],"note":"Braucht kein Equipment, läuft auf Reisen planmäßig."},{"date":"2026-08-30","w":3,"type":"long","title":"Long Run — 14 km","meta":"90 min · 5:50–6:05 /km","km":14,"lines":["14 km bei 5:50–6:05 /km — längster Lauf des Blocks","Letzte 3 km bei 5:15–5:20, falls die Beine mitspielen"],"note":""},{"date":"2026-08-31","w":4,"type":"rest","title":"Rückreise — optional 5 km locker","meta":"0–35 min","km":0,"lines":["Optional 5 km ganz locker, wenn die Reise es zulässt","Rückenroutine auf jeden Fall"],"note":"Wenn die Reise anstrengend war: einfach frei nehmen. Diese Woche ist ein Deload."},{"date":"2026-09-01","w":4,"type":"gym","title":"Gym 1 — Ski & Row Technik","meta":"60 min · erster Gym-Tag","km":0,"lines":["SkiErg: 10 min Technikspiel (Damping 5–7), dann 6 × 250 m locker, 60 s Pause","→ Fokus: Hüfte treibt, Arme führen nur. Bei 193 cm ist der lange Zugweg dein Vorteil — nutz ihn statt kurz zu hacken","Rower: 10 min Technik, dann 6 × 250 m, 60 s Pause. Drag 110–120","→ Reihenfolge Beine → Rumpf → Arme, Rückweg genau umgekehrt","Danach 15 min leichtes Kraft B (Klimmzüge, Rows, Carries)"],"note":"Technik, nicht Belastung. Neue Bewegungsmuster + Vollgas ist der schnellste Weg in eine Verletzung."},{"date":"2026-09-02","w":4,"type":"quality","title":"Reps — 6 × 400 m","meta":"50 min · 8 km total","km":8,"lines":["15 min Einlaufen","6 × 400 m @ 4:05–4:15 /km, 200 m Trabpause","10 min Auslaufen"],"note":"Kurz, knackig, wenig Ermüdung. Schärfung für die Testsession am Samstag."},{"date":"2026-09-03","w":4,"type":"gym","title":"Gym 2 — Sled & Wall Balls","meta":"60 min","km":0,"lines":["Sled Push: 6 × 15 m mit ~60 % Renngewicht. Tief, Arme lang, kleine schnelle Schritte, Blick nach unten","Sled Pull: 6 × 12,5 m leicht. ACHTUNG RÜCKEN: Hüfte tief, Rücken neutral, ziehen mit Beinen und Latissimus — nicht aus der Lendenwirbelsäule reißen","Wall Balls: 5 × 15 mit 6 kg. Fokus auf Rhythmus und Hocktiefe","→ Bei deiner Größe ist die Hocktiefe der Limiter, nicht der Wurf (250 cm Reichhöhe bei 305 cm Ziel)","Danach 15 min leichtes Kraft A"],"note":"Erste Sled-Erfahrung. Lieber zu leicht als zu schwer — heute geht es nur um das Bewegungsmuster."},{"date":"2026-09-04","w":4,"type":"rest","title":"Ruhetag","meta":"0–15 min","km":0,"lines":["Rückenroutine","Gut essen, gut schlafen — morgen ist Testtag"],"note":""},{"date":"2026-09-05","w":4,"type":"test","title":"BENCHMARK — Mini-Simulation","meta":"50 min · ~6,5 km · alle Splits notieren","km":6.5,"lines":["15 min Warmup","Dann alles am Stück, Zeit nehmen:","1000 m Ski → 1000 m Lauf → 500 m Row → 1000 m Lauf → 40 m Burpee Broad Jumps → 1000 m Lauf → 50 Wall Balls → 1000 m Lauf","Effort ca. 85 % — KEIN Maximaltest, sondern eine Referenz","Jeden einzelnen Split notieren (Tracker nutzen!)"],"note":"Diese Zahlen bestimmen Monat 2. Lieber kontrolliert und vollständig als schnell und abgebrochen."},{"date":"2026-09-06","w":4,"type":"long","title":"Long Run — 12 km locker","meta":"80 min · 6:10–6:25 /km","km":12,"lines":["12 km ganz locker. Deload — 6:10–6:25 /km ist völlig okay"],"note":"Blockabschluss. Danach: Zahlen zusammenstellen und Monat 2 planen."}],"weeks":{"1":{"label":"Woche 1 · 10.–16.08.","theme":"Wiedereinstieg","km":28.6,"focus":"Der einzige riskante Volumensprung im Block (+45 %). Zusatz-km kommen ausschließlich über Häufigkeit bei 6:00+/km. Beim ersten Ziehen in Schienbein, Achillessehne oder Knie: Dienstagseinheit ersatzlos streichen."},"2":{"label":"Woche 2 · 17.–23.08.","theme":"Aufbau","km":35.4,"focus":"Erste echte Intervalleinheit, Farmers Carry auf Renngewicht. Ab jetzt nur noch 10–15 % Volumensteigerung pro Woche."},"3":{"label":"Woche 3 · 24.–30.08.","theme":"Blockspitze · Reise ab Fr","km":40.4,"focus":"Höchstes Volumen des Blocks. Die Reise 28.–31.08. trifft nur Ruhetag und Wochenende — Sa und So brauchen ohnehin kein Equipment, es fällt nichts aus."},"4":{"label":"Woche 4 · 31.08.–06.09.","theme":"Gym-Start & Benchmarks · Deload","km":26.5,"focus":"Bewusst leichter. Ziel ist Technik und Zahlen, nicht Belastung: erstes Gefühl für Ski, Row und Sled, plus die Benchmarks für Monat 2."}},"paces":[["Easy / Recovery","6:00 – 6:20","Alle Grundlagenläufe. Nasenatmung möglich, Gespräch problemlos."],["Long Run","5:50 – 6:10","Sonntag. Nur die letzten km optional schneller."],["Steady","5:05 – 5:15","Progressive Enden, Sled-Ersatz-Blöcke."],["Threshold (T)","4:45 – 4:55","Tempoblöcke 5–10 min. Komfortabel hart, ca. 1h-Renntempo."],["Interval (I)","4:20 – 4:30","3–5 min Intervalle. VO2max."],["Rep","4:00 – 4:10","400er. Nur zur Schärfung, wenig Volumen."],["Race-Pace-Vision","4:40 – 4:50","Zieltempo pro Laufsplit am 01.11. Kommt ab Monat 2."]],"subs":[["1000 m SkiErg","Klimmzüge, DB-Rudern, Hang-Cleans","Nicht ersetzbar. Ab 01.09. Technik-Priorität Nr. 1."],["50 m Sled Push (152 kg)","Hügel steil bergauf, 30–40 s, starker Vorlehnen","90 kg sind hier ein Vorteil. Kommt relativ schnell."],["50 m Sled Pull (103 kg)","Klimmzüge + einarmiges Rudern","Technisch anspruchsvollste Station. Rücken beachten."],["80 m Burpee Broad Jumps","1:1 möglich — jeden Samstag draußen","Bei 193 cm teuer. Deshalb ab Woche 1 dabei."],["1000 m Row","—","Nicht ersetzbar. Ab 01.09."],["200 m Farmers Carry (2×24 kg)","1:1 mit 2×20 kg, dafür längere Distanz","Griffkraft ist der Limiter."],["100 m Sandbag Lunges (20 kg)","Rucksack mit 15–20 kg, Walking Lunges","Rucksack > Hanteln, weil die Last oben liegt."],["100 Wall Balls (6 kg, 3,05 m)","DB Thruster 2×8–10 kg, hohe Reps","Deine leichteste Station — 250 cm Reichhöhe."]],"budget":[["8 Laufsplits (inkl. Roxzone)","≈ 38:00","ø 4:45/km — nach jeder Station"],["8 Stationen","≈ 32:00","z.B. Ski 4:20 · Row 4:00 · Wall Balls 5:40"],["Übergänge / Puffer","≈ 5:00","Realität"]],"back":["Curl-up (McGill) — 3 × 8 s halten pro Seite, Hände unter der Lende","Side Plank — 3 × 25–40 s pro Seite","Bird Dog — 3 × 8 pro Seite, langsam, kein Ausweichen im Becken","Glute Bridge — 2 × 15, oben 2 s halten","Hüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite","90/90 Hüftrotation — 8 Wechsel pro Seite"],"kraftA":["Warmup 8 min: Beinpendel, 90/90-Hüfte, 15 Glute Bridges, 10 Bodyweight-Lunges/Seite, Sprunggelenk-Mobility","DB Front-Rack Squat — Woche 1: 3×10 RPE6 · W2: 4×10 · W3: 4×8 RPE7–8","Bulgarian Split Squat — 3 × 10/Seite, W1 Körpergewicht · W2 2×10–12 kg · W3 2×12–14 kg","Rumänisches Kreuzheben (RDL) — 3 × 10 leicht. Rücken neutral, Form vor Gewicht","DB Thruster — W1 3×12 · W2 3×15 · W3 4×15, leicht  (dein Wall-Ball-Ersatz: leicht, flüssig, viele Reps)","DB Schulterdrücken oder Push-ups — 3 × 10–12","Step-ups auf Bank/Stufe mit Hanteln — 3 × 12/Seite","Dead Bug 3 × 10/Seite + Side Plank 3 × 35 s/Seite"],"kraftB":["Warmup 8 min: Schulterkreisen, Pull-aparts, Scapula-Hangs an der Stange, Cat-Cow","Klimmzüge — 4 × 5–8 (oder Negative). Submaximal, nie bis zum Versagen","Einarmiges DB-Rudern — 4 × 10/Seite, abgestützt","Farmers Carry — W1 4×60 m @2×15 kg · W2 4×80 m @2×20 kg · W3 4×100 m unbroken","Suitcase Carry (einseitig) — 3 × 40 m/Seite. Bestes Anti-Seitneige-Training für deinen Rücken","DB Hang Clean & Press — 4 × 8/Seite","Hollow Hold 3 × 30 s + Bird Dog 3 × 8/Seite","Finisher: 3 Runden 10 Burpees + 20 Mountain Climbers + 30 s Plank"],"profile":"Du bist mein Hyrox-Coach. Kontext zu mir:\n- Wettkampf: Hyrox Single, Open Division, 01.11.2026. Zielzeit 1:15 (Stretch), realistischer Plan sub 1:25.\n- 193 cm, 90 kg, männlich. 5 km aktuell ca. 22:30. Laufumfang steigt in Block 1 von 20 auf 40 km/Woche.\n- Krafttraining: 3 Jahre Pause, Wiedereinstieg ab 10.08.2026. Leichte Probleme im unteren Rücken — Sandbag Lunges und Sled Pull sind meine Risikostationen.\n- Equipment zuhause: verstellbare Kurzhanteln bis 20 kg pro Hantel, Ladestange mit Gewichtsscheiben. Klimmzugstange ist defekt. Farmers und Suitcase Carry gehen aus Platzmangel nicht — nur als Holds im Stand. Burpee Broad Jumps und Lunges nur draußen, dorthin 10 min Anlauf.\n- Gym-Zugang ab 01.09.2026: dann Ski Erg, Rower, Sled und Wall Balls verfügbar.\n- Vollzeitjob: morgens maximal 45 min, abends länger möglich, Wochenende flexibel. 6 Einheiten pro Woche.\n- Wochenstruktur: Mo Kraft B (Zug/Carries), Di Easy Run, Mi Laufqualität, Do Kraft A (Beine/Push), Fr Ruhetag, Sa Compromised Session draußen, So Long Run.\n- Paces: Easy 6:00-6:20, Long 5:50-6:10, Threshold 4:45-4:55, Intervall 4:20-4:30, Rep 4:00-4:10 pro km.\n- Tägliche Rückenroutine (McGill Big 3, Glute Bridges, Hüftbeuger) ist Pflicht.","asks":["Alle Splits der Benchmark-Session am 05.09.","Tatsächlich gelaufener Wochenumfang (nicht der geplante)","Arbeitsgewichte Kraft A und B am Ende von Woche 3","Max. Klimmzüge in einem Satz","Wie sich der Rücken über die 4 Wochen verhalten hat","Gefühl auf Sled Push und Pull — schwer, machbar, technisch unklar?"]};
+
+/* ---------- storage (fällt still auf Speicher im Arbeitsspeicher zurück) ---------- */
+const KEY='hyrox2611';
+let mem={};
+const store={
+  get(){ try{ return JSON.parse(localStorage.getItem(KEY))||{} }catch(e){ return mem } },
+  set(v){ try{ localStorage.setItem(KEY,JSON.stringify(v)) }catch(e){ mem=v } }
+};
+let S = Object.assign({done:{},log:{},back:{},fs:1,th:'auto'}, store.get());
+const save=()=>store.set(S);
+
+/* ---------- helpers ---------- */
+const DOW=['So','Mo','Di','Mi','Do','Fr','Sa'];
+const MON=['Jan','Feb','März','Apr','Mai','Juni','Juli','Aug','Sep','Okt','Nov','Dez'];
+const iso=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+const parse=s=>{const[y,m,d]=s.split('-').map(Number);return new Date(y,m-1,d)};
+const fmt=s=>{const d=parse(s);return `${DOW[d.getDay()]}, ${d.getDate()}. ${MON[d.getMonth()]}`};
+const TODAY=iso(new Date());
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const TAGS={easy:['t-run','Easy'],quality:['t-run','Qualität'],long:['t-run','Long Run'],
+  kraftA:['t-str','Kraft A'],kraftB:['t-str','Kraft B'],hyrox:['t-hyx','Hyrox'],
+  gym:['t-hyx','Gym'],test:['t-tst','Benchmark'],rest:['t-off','Ruhetag']};
+const TRAIN=D.sessions.filter(s=>s.type!=='rest');
+const PLANKM=Math.round(D.sessions.reduce((a,s)=>a+s.km,0));
+const byDate=Object.fromEntries(D.sessions.map(s=>[s.date,s]));
+
+const BACKLBL=['gut','leicht spürbar','deutlich','Schmerz'];
+
+/* ---------- Claude-Anbindung ---------- */
+function promptFor(s){
+  const l=S.log[s.date]||{}, bits=[];
+  if(S.done[s.date])bits.push('erledigt'); 
+  if(l.km)bits.push(l.km+' km gelaufen');
+  if(l.rpe)bits.push('Anstrengung '+l.rpe+'/10');
+  if(l.back!=null&&l.back!=='')bits.push('Rücken: '+BACKLBL[l.back]);
+  if(l.note)bits.push('Notiz: '+l.note);
+  return [D.profile, '',
+    'GEPLANTE EINHEIT — '+fmt(s.date)+' ('+s.date+'):',
+    s.title+' — '+s.meta,
+    ...s.lines.map(t=>'- '+t.replace(/^→\s*/,'')),
+    ...(s.note?['Hinweis vom Coach: '+s.note]:[]),
+    ...(bits.length?['','Mein Log dazu: '+bits.join(' · ')]:[]),
+    '',
+    'Ich will diese Einheit anpassen. Frag mich in einem Satz, wo das Problem liegt '
+    +'(Zeit, Equipment, Rücken, Müdigkeit, Motivation), und schlag dann eine konkrete '
+    +'Alternative vor, die den Trainingsreiz möglichst erhält. Berücksichtige dabei, '
+    +'was in dieser Woche sonst noch ansteht.'
+  ].join('\n');
+}
+function blockPrompt(){
+  return [D.profile,'','MEIN LOG AUS BLOCK 1:','',report(),'',
+    'Bitte analysiere den Block: Wo bin ich vom Plan abgewichen, was heißt das für die '
+    +'Zielzeit, und wie sieht Monat 2 (07.09.–04.10.) konkret aus? Frag nach, wenn dir '
+    +'Zahlen fehlen.'].join('\n');
+}
+const claudeUrl = t => 'https://claude.ai/new?q='+encodeURIComponent(t);
+
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('on');
+  clearTimeout(t._x);t._x=setTimeout(()=>t.classList.remove('on'),1900)}
+
+/* ---------- header ---------- */
+function head(){
+  const days=Math.round((parse(D.race)-parse(TODAY))/864e5);
+  document.getElementById('cd').textContent =
+    days>0 ? `${days} Tage bis 01.11. · Ziel ${D.goal}` : 'Renntag!';
+  const done=TRAIN.filter(s=>S.done[s.date]).length;
+  const km=D.sessions.reduce((a,s)=>a+(S.done[s.date]?(parseFloat((S.log[s.date]||{}).km)||s.km):0),0);
+  const pct=Math.round(done/TRAIN.length*100);
+  const b=document.getElementById('pgbar');
+  b.firstElementChild.style.width=pct+'%'; b.setAttribute('aria-valuenow',pct);
+  document.getElementById('pgl').textContent=`Block 1 · ${done}/${TRAIN.length} Einheiten`;
+  document.getElementById('kml').textContent=`${Math.round(km)} / ${PLANKM} km`;
+}
+
+/* ---------- views ---------- */
+function sessionCard(s,open){
+  const [c,l]=TAGS[s.type];
+  const steps=s.lines.map(t=>`<li class="${t.startsWith('→')?'arrow':''}">${esc(t.replace(/^→\s*/,''))}</li>`).join('');
+  const lg=S.log[s.date]||{};
+  const done=!!S.done[s.date];
+  return `<article class="card today ${s.type==='test'?'hot':s.type==='rest'?'':'acc'}">
+    <div class="dt">${fmt(s.date)}${s.date===TODAY?' · heute':''}</div>
+    <h2>${esc(s.title)}</h2>
+    <div class="meta"><span class="tag ${c}">${l}</span> ${esc(s.meta)}</div>
+    <ul class="steps">${steps}</ul>
+    ${s.note?`<div class="card warn" style="margin:14px 0 0"><div class="ct">Worauf es heute ankommt</div><div class="sub">${esc(s.note)}</div></div>`:''}
+    <button class="big" data-done="${s.date}" aria-pressed="${done}">
+      ${done?'✓ Erledigt':'Als erledigt markieren'}</button>
+    <div class="fields">
+      <div class="f"><label for="km-${s.date}">Tatsächliche km</label>
+        <input id="km-${s.date}" type="number" inputmode="decimal" step="0.1" min="0"
+          placeholder="${s.km||0}" value="${lg.km??''}" data-log="km" data-d="${s.date}"></div>
+      <div class="f"><label for="rpe-${s.date}">Anstrengung 1–10</label>
+        <input id="rpe-${s.date}" type="number" inputmode="numeric" step="1" min="1" max="10"
+          placeholder="–" value="${lg.rpe??''}" data-log="rpe" data-d="${s.date}"></div>
+      <div class="f full"><label id="bl-${s.date}">Rücken heute</label>
+        <div class="seg" role="group" aria-labelledby="bl-${s.date}">
+          ${['gut','leicht spürbar','deutlich','Schmerz'].map((t,i)=>
+            `<button data-back="${i}" data-d="${s.date}" aria-pressed="${lg.back==i}">${t}</button>`).join('')}
+        </div></div>
+      <div class="f full"><label for="nt-${s.date}">Notiz${s.type==='test'?' — hier alle Splits eintragen':''}</label>
+        <textarea id="nt-${s.date}" data-log="note" data-d="${s.date}"
+          placeholder="${s.type==='test'?'Ski 1000m: …\nLauf 1: …\nRow 500m: …':'Wie war es? Gewichte, Pace, Gefühl …'}">${esc(lg.note||'')}</textarea></div>
+    </div>
+    <a class="big coach" href="${claudeUrl(promptFor(s))}" target="_blank" rel="noopener">
+      Diese Einheit mit Claude anpassen</a>
+    <button class="big ghost" data-cp="${s.date}">Nur den Prompt kopieren</button>
+    <div class="sub" style="margin-top:10px">Öffnet einen neuen Chat mit dem kompletten Kontext —
+      Profil, heutige Einheit und dein Log. Du musst nichts erklären, nur schreiben was los ist.</div>
+  </article>`;
+}
+
+function vToday(){
+  const s=byDate[TODAY];
+  let html='';
+  if(!s){
+    const past=parse(TODAY)>parse(D.sessions.at(-1).date);
+    html=`<div class="card ${past?'ok':'acc'}"><div class="ct">${past?'Block 1 abgeschlossen':'Block 1 startet am 10.08.'}</div>
+      <div class="sub">${past?'Zeit für Monat 2 — schick die Zahlen aus dem Fortschritt-Tab an deinen Coach.':'Bis dahin: unter „Plan" schon mal reinschauen.'}</div></div>`;
+    const nxt=D.sessions.find(x=>parse(x.date)>=parse(TODAY));
+    if(nxt) html+=`<h3 style="margin:18px 0 10px;font-size:.85em;color:var(--tx3);text-transform:uppercase;letter-spacing:.08em">Nächste Einheit</h3>`+sessionCard(nxt);
+  } else {
+    html=sessionCard(s);
+  }
+  /* Rückenroutine */
+  const on=!!S.back[TODAY];
+  let streak=0; for(let i=0;;i++){const d=new Date();d.setDate(d.getDate()-i);
+    if(S.back[iso(d)])streak++; else break;}
+  const dots=D.sessions.map(x=>`<span class="${S.back[x.date]?'on':''} ${x.date===TODAY?'tdy':''}" title="${x.date}"></span>`).join('');
+  html+=`<article class="card ${on?'ok':'warn'}">
+    <div class="ct">Rückenroutine — 8 min, täglich</div>
+    <div class="sub">Nicht optional. Sandbag Lunges und Sled Pull sind für dich die riskantesten Stationen — Toleranz baust du jetzt auf, nicht im Oktober.${streak>1?` <b>${streak} Tage in Folge.</b>`:''}</div>
+    <ul class="steps">${D.back.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>
+    <button class="big ${on?'':'ghost'}" data-back-today aria-pressed="${on}">${on?'✓ Heute gemacht':'Heute abhaken'}</button>
+    <div class="dots" aria-hidden="true">${dots}</div>
+    <div class="sub" style="margin-top:12px;color:var(--hot)"><b>Abbruchkriterien:</b> Schmerz der ins Bein zieht, Taubheit/Kribbeln, oder Morgensteifigkeit über 30 min → Einheit streichen und ärztlich abklären.</div>
+  </article>`;
+  return html;
+}
+
+function vPlan(){
+  return Object.entries(D.weeks).map(([n,w])=>{
+    const ss=D.sessions.filter(s=>s.w==n);
+    const isNow=ss.some(s=>s.date===TODAY)||ss.some(s=>parse(s.date)>=parse(TODAY))&&!D.sessions.some(s=>s.w<n&&parse(s.date)>=parse(TODAY));
+    const rows=ss.map(s=>{const[c,l]=TAGS[s.type];const d=parse(s.date);
+      return `<button class="drow" data-open="${s.date}" data-done="${S.done[s.date]?1:0}" data-today="${s.date===TODAY?1:0}">
+        <span class="dd">${DOW[d.getDay()]}<b>${d.getDate()}.</b></span>
+        <span class="di"><span class="n">${esc(s.title)}</span><span class="m">${esc(s.meta)}</span></span>
+        <span class="ck" aria-hidden="true">✓</span>
+        <span class="sr">${S.done[s.date]?'erledigt':'offen'}</span></button>`}).join('');
+    return `<details class="wk" ${isNow?'open':''}>
+      <summary><b>${esc(w.label)}</b> <em>${esc(w.theme)}</em><span class="km">${w.km} km</span></summary>
+      <div class="wbody">
+        <div class="card acc" style="margin:12px 0 4px;padding:13px"><div class="sub">${esc(w.focus)}</div></div>
+        ${rows}</div></details>`;
+  }).join('');
+}
+
+function vRef(){
+  const hosted = location.protocol==='http:'||location.protocol==='https:';
+  const base = location.href.replace(/[^/]*$/,'');
+  const wc = 'webcal://'+location.host+location.pathname.replace(/[^/]*$/,'')+'hyrox-block1.ics';
+  const dl = hosted ? `<article class="card ok"><div class="ct">Auf dieses Gerät holen</div>
+    <div class="sub">Diese Seite ist die Quelle für alles — kein Konto, kein Login nötig.</div>
+    <a class="big" href="${wc}" style="text-decoration:none">Kalender abonnieren</a>
+    <a class="big ghost" href="hyrox-block1.ics" style="text-decoration:none">Kalender-Datei laden (.ics)</a>
+    <a class="big ghost" href="hyrox-tracker.xlsx" style="text-decoration:none">Tracker laden (.xlsx)</a>
+    <div class="sub" style="margin-top:12px"><b>Abonnieren</b> ist die bessere Wahl: der Kalender
+    aktualisiert sich von selbst, sobald hier eine neue Version liegt (z.B. Monat 2). Nachteil:
+    abonnierte Kalender sind schreibgeschützt — Termine verschieben geht nur beim einmaligen
+    Import über die .ics-Datei.</div></article>` : '';
+  const tbl=(head,rows)=>`<div class="tb"><table><thead><tr>${head.map(h=>`<th>${h}</th>`).join('')}</tr></thead>
+    <tbody>${rows.map(r=>`<tr>${r.map((c,i)=>`<td class="${i==1?'n':''}">${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+  return dl + `
+  <article class="card hot"><div class="ct">Zeitbudget für 1:15</div>
+    ${tbl(['Segment','Budget','Bedeutung'],D.budget)}
+    <div class="sub" style="margin-top:10px">Um 8× ~4:45/km <b>müde</b> zu laufen, brauchst du frisch eine 5 km um 19:30–20:00. Du stehst bei 22:30. Realistisch sind <b>1:22–1:28</b> — 1:15 bleibt Stretch-Goal.</div></article>
+
+  <article class="card acc"><div class="ct">Trainingspaces</div>
+    <div class="sub">Aus 5 km ≈ 22:30 (VDOT ~43,5). Halte dich daran, auch wenn es zu leicht wirkt.</div>
+    ${tbl(['Zone','Pace /km','Wofür'],D.paces)}</article>
+
+  <article class="card"><div class="ct">Kraft A — Beine &amp; Push (Do)</div>
+    <ul class="steps">${D.kraftA.map(t=>`<li>${esc(t)}</li>`).join('')}</ul></article>
+
+  <article class="card"><div class="ct">Kraft B — Zug, Carries &amp; Rumpf (Mo)</div>
+    <ul class="steps">${D.kraftB.map(t=>`<li>${esc(t)}</li>`).join('')}</ul></article>
+
+  <article class="card warn"><div class="ct">Rückenroutine — 8 min, täglich</div>
+    <ul class="steps">${D.back.map(t=>`<li>${esc(t)}</li>`).join('')}</ul></article>
+
+  <article class="card"><div class="ct">Stations-Substitute (August)</div>
+    ${tbl(['Station (Open)','Ersatz bis 31.08.','Hinweis'],D.subs)}</article>
+
+  <article class="card ok"><div class="ct">Wochenstruktur</div>
+    <ul class="steps">
+      <li><b>Mo</b> abends — Kraft B (Zug, Carries, Rumpf)</li>
+      <li><b>Di</b> früh — Easy Run + Rückenroutine</li>
+      <li><b>Mi</b> abends — Laufqualität</li>
+      <li><b>Do</b> abends — Kraft A (Beine, Push, Thruster)</li>
+      <li><b>Fr</b> — Ruhetag</li>
+      <li><b>Sa</b> — Compromised Session draußen</li>
+      <li><b>So</b> — Long Run</li>
+    </ul>
+    <div class="sub" style="margin-top:10px">Verschiebbar, solange zwei Regeln halten: nie Kraft A direkt vor der Samstagseinheit, und nie zwei harte Tage hintereinander außer Sa/So. Fällt etwas aus: Sa und So sind die wichtigsten, Di ist verzichtbar.</div></article>
+
+  <article class="card"><div class="ct">Alltag</div>
+    <ul class="steps">
+      <li><b>Protein 150–180 g/Tag.</b> Unterschied zwischen „Muskelkater bis Mittwoch" und Anpassung.</li>
+      <li><b>Schlaf 7–8 h.</b> Wenn eine Woche nur 5 h/Nacht drin sind: Dienstagseinheit streichen, nicht den Schlaf.</li>
+      <li><b>Morgens nüchtern</b> ist okay für Di/Mi. Nicht nüchtern: alles über 60 min und alles Intensive — da Banane + Kaffee 20–30 min davor.</li>
+    </ul></article>`;
+}
+
+function vLog(){
+  const rows=Object.entries(D.weeks).map(([n,w])=>{
+    const ss=D.sessions.filter(s=>s.w==n), tr=ss.filter(s=>s.type!=='rest');
+    const dn=tr.filter(s=>S.done[s.date]).length;
+    const km=ss.reduce((a,s)=>a+(S.done[s.date]?(parseFloat((S.log[s.date]||{}).km)||s.km):0),0);
+    const rp=tr.map(s=>parseFloat((S.log[s.date]||{}).rpe)).filter(x=>x>0);
+    return [`W${n}`,`${dn}/${tr.length}`,`${Math.round(km)} / ${w.km} km`,
+      rp.length?(rp.reduce((a,b)=>a+b,0)/rp.length).toFixed(1):'–'];
+  });
+  const bk=D.sessions.filter(s=>parse(s.date)<=parse(TODAY));
+  const bkd=bk.filter(s=>S.back[s.date]).length;
+  const worst=Object.values(S.log).map(l=>+l.back).filter(x=>x>=0);
+  return `
+  <article class="card ok"><div class="ct">Block 1 auf einen Blick</div>
+    <div class="tb"><table><thead><tr><th>Woche</th><th>Einheiten</th><th>Kilometer</th><th>ø RPE</th></tr></thead>
+      <tbody>${rows.map(r=>`<tr>${r.map((c,i)=>`<td class="${i?'n':''}">${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
+    <div class="sub" style="margin-top:10px">Rückenroutine: <b>${bkd} von ${bk.length}</b> Tagen abgehakt${worst.length?` · schlechtester Rücken-Score: ${BACKLBL[Math.max(...worst)]}`:''}</div></article>
+
+  <article class="card acc"><div class="ct">Was am 06.09. gebraucht wird</div>
+    <ul class="steps">${D.asks.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>
+    <a class="big coach" id="blk" href="#" target="_blank" rel="noopener">Block mit Claude auswerten</a>
+    <button class="big" id="exp">Zusammenfassung teilen</button>
+    <button class="big ghost" id="cpy">In die Zwischenablage kopieren</button>
+    <div class="sub" style="margin-top:12px">Erzeugt einen Textblock mit allen Zahlen, Notizen und Benchmark-Splits — den kannst du direkt an Claude schicken, damit Monat 2 auf echten Daten aufbaut.</div></article>
+
+  <article class="card"><div class="ct">Daten</div>
+    <div class="sub">Alles liegt nur auf diesem Gerät (Browser-Speicher). Kein Konto, kein Server, keine Übertragung.</div>
+    <button class="big ghost" id="rst" style="border-color:var(--hot);color:var(--hot)">Alle Eingaben löschen</button></article>`;
+}
+
+function report(){
+  let o=[`HYROX BLOCK 1 — Bericht vom ${fmt(TODAY)}`,`Ziel: ${D.goal} · Rennen ${D.race}`,''];
+  for(const[n,w] of Object.entries(D.weeks)){
+    const ss=D.sessions.filter(s=>s.w==n), tr=ss.filter(s=>s.type!=='rest');
+    const km=ss.reduce((a,s)=>a+(S.done[s.date]?(parseFloat((S.log[s.date]||{}).km)||s.km):0),0);
+    o.push(`## ${w.label} — ${tr.filter(s=>S.done[s.date]).length}/${tr.length} Einheiten, ${Math.round(km)} von ${w.km} km`);
+    ss.filter(s=>s.type!=='rest'||S.log[s.date]?.note).forEach(s=>{const l=S.log[s.date]||{};
+      const bits=[S.done[s.date]?'erledigt':'offen'];
+      if(l.km)bits.push(l.km+' km'); if(l.rpe)bits.push('RPE '+l.rpe);
+      if(l.back!=null&&l.back!=='')bits.push('Rücken: '+BACKLBL[l.back]);
+      o.push(`- ${s.date} ${s.title} — ${bits.join(', ')}`);
+      if(l.note)o.push(`    ${l.note.replace(/\n/g,'\n    ')}`)});
+    o.push('');
+  }
+  const bk=D.sessions.filter(s=>parse(s.date)<=parse(TODAY));
+  o.push(`Rückenroutine: ${bk.filter(s=>S.back[s.date]).length}/${bk.length} Tage`);
+  return o.join('\n');
+}
+
+/* ---------- render ---------- */
+let tab='today';
+const VIEWS={today:vToday,plan:vPlan,ref:vRef,log:vLog};
+function render(keep){
+  const y=keep?window.scrollY:0;
+  document.getElementById('view').innerHTML=VIEWS[tab]();
+  const blk=document.getElementById('blk');
+  if(blk)blk.href=claudeUrl(blockPrompt());
+  head(); if(!keep)window.scrollTo(0,0); else window.scrollTo(0,y);
+}
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{
+  tab=b.dataset.tab;
+  document.querySelectorAll('nav button').forEach(x=>x.setAttribute('aria-selected',x===b));
+  render(); document.getElementById('live').textContent=b.textContent.trim()+' geöffnet';
+});
+
+/* ---------- interactions ---------- */
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-done],[data-back],[data-back-today],[data-open],[data-cp],#exp,#cpy,#rst');
+  if(!t)return;
+  if(t.hasAttribute('data-done')){
+    const d=t.dataset.done; S.done[d]=!S.done[d]; if(!S.done[d])delete S.done[d];
+    save(); render(true); toast(S.done[d]?'Erledigt ✓':'Wieder offen');
+  } else if(t.hasAttribute('data-back')){
+    const d=t.dataset.d; (S.log[d]=S.log[d]||{}).back=+t.dataset.back; save(); render(true);
+  } else if(t.hasAttribute('data-back-today')){
+    S.back[TODAY]=!S.back[TODAY]; if(!S.back[TODAY])delete S.back[TODAY];
+    save(); render(true); toast(S.back[TODAY]?'Rücken erledigt ✓':'Wieder offen');
+  } else if(t.hasAttribute('data-open')){
+    const s=byDate[t.dataset.open];
+    document.getElementById('view').innerHTML=
+      `<button class="iconbtn" style="width:auto;padding:0 16px;margin-bottom:14px" id="bk">← Zurück zum Plan</button>`+sessionCard(s);
+    window.scrollTo(0,0);
+    document.getElementById('bk').onclick=()=>{tab='plan';render()};
+  } else if(t.hasAttribute('data-cp')){
+    navigator.clipboard?.writeText(promptFor(byDate[t.dataset.cp])).then(
+      ()=>toast('Prompt kopiert — in Claude einfügen'),()=>toast('Kopieren nicht möglich'));
+  } else if(t.id==='exp'){
+    const txt=report();
+    if(navigator.share)navigator.share({title:'Hyrox Block 1',text:txt}).catch(()=>{});
+    else{navigator.clipboard?.writeText(txt);toast('Kopiert')}
+  } else if(t.id==='cpy'){
+    navigator.clipboard?.writeText(report()).then(()=>toast('In die Zwischenablage kopiert'),
+      ()=>toast('Kopieren nicht möglich'));
+  } else if(t.id==='rst'){
+    if(confirm('Wirklich alle Häkchen, Zahlen und Notizen löschen?')){
+      S={done:{},log:{},back:{},fs:S.fs,th:S.th}; save(); render(); toast('Zurückgesetzt')}
+  }
+});
+document.addEventListener('input',e=>{
+  const t=e.target; if(!t.dataset.log)return;
+  const d=t.dataset.d; (S.log[d]=S.log[d]||{})[t.dataset.log]=t.value; save(); head();
+});
+
+/* ---------- settings ---------- */
+const FS=[.94,1,1.12,1.26];
+function applyFs(){document.documentElement.style.setProperty('--fs',FS[S.fs]+'rem')}
+document.getElementById('fsBtn').onclick=()=>{S.fs=(S.fs+1)%FS.length;save();applyFs();
+  document.getElementById('live').textContent='Schriftgröße '+(S.fs+1)+' von '+FS.length};
+document.getElementById('thBtn').onclick=()=>{
+  S.th=S.th==='auto'?'light':S.th==='light'?'dark':'auto'; save();
+  document.documentElement.dataset.th=S.th==='auto'?'':S.th;
+  document.getElementById('live').textContent='Darstellung: '+S.th;
+  toast(S.th==='auto'?'Systemeinstellung':S.th==='light'?'Hell':'Dunkel')};
+applyFs(); if(S.th!=='auto')document.documentElement.dataset.th=S.th;
+render();
+
+if('serviceWorker' in navigator) addEventListener('load',()=>
+  navigator.serviceWorker.register('sw.js').catch(()=>{}));
+</script>
+</body>
+</html>
