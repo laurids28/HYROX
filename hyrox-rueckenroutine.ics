@@ -1,0 +1,643 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Hyrox Block 1//Rueckenroutine//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hyrox Rückenroutine
+X-APPLE-CALENDAR-COLOR:#F2B65E
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+X-LIC-LOCATION:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260810@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260810T213000
+DTEND;TZID=Europe/Berlin:20260810T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260811@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260811T213000
+DTEND;TZID=Europe/Berlin:20260811T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260812@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260812T213000
+DTEND;TZID=Europe/Berlin:20260812T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260813@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260813T213000
+DTEND;TZID=Europe/Berlin:20260813T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260814@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260814T213000
+DTEND;TZID=Europe/Berlin:20260814T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260815@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260815T213000
+DTEND;TZID=Europe/Berlin:20260815T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260816@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260816T213000
+DTEND;TZID=Europe/Berlin:20260816T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260817@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260817T213000
+DTEND;TZID=Europe/Berlin:20260817T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260818@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260818T213000
+DTEND;TZID=Europe/Berlin:20260818T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260819@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260819T213000
+DTEND;TZID=Europe/Berlin:20260819T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260820@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260820T213000
+DTEND;TZID=Europe/Berlin:20260820T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260821@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260821T213000
+DTEND;TZID=Europe/Berlin:20260821T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260822@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260822T213000
+DTEND;TZID=Europe/Berlin:20260822T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260823@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260823T213000
+DTEND;TZID=Europe/Berlin:20260823T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260824@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260824T213000
+DTEND;TZID=Europe/Berlin:20260824T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260825@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260825T213000
+DTEND;TZID=Europe/Berlin:20260825T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260826@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260826T213000
+DTEND;TZID=Europe/Berlin:20260826T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260827@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260827T213000
+DTEND;TZID=Europe/Berlin:20260827T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260828@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260828T213000
+DTEND;TZID=Europe/Berlin:20260828T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260829@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260829T213000
+DTEND;TZID=Europe/Berlin:20260829T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260830@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260830T213000
+DTEND;TZID=Europe/Berlin:20260830T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260831@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260831T213000
+DTEND;TZID=Europe/Berlin:20260831T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260901@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260901T213000
+DTEND;TZID=Europe/Berlin:20260901T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260902@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260902T213000
+DTEND;TZID=Europe/Berlin:20260902T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260903@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260903T213000
+DTEND;TZID=Europe/Berlin:20260903T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260904@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260904T213000
+DTEND;TZID=Europe/Berlin:20260904T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260905@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260905T213000
+DTEND;TZID=Europe/Berlin:20260905T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hyrox-b1-ruecken-20260906@twentyfour.industries
+DTSTAMP:20260810T120000Z
+DTSTART;TZID=Europe/Berlin:20260906T213000
+DTEND;TZID=Europe/Berlin:20260906T213800
+SUMMARY:Rückenroutine (8 min)
+DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
+ er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
+  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
+ ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
+ n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
+ nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
+  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
+ ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
+  streichen und ärztlich abklären.
+CATEGORIES:Hyrox\,Prehab
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Rückenroutine (8 min)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

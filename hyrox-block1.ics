@@ -8,12 +8,30 @@ X-WR-CALDESC:Trainingsplan Hyrox Single Open, Rennen 01.11.2026. Zielzeit 1
  :15:00 (Stretch) / sub 1:25 (Plan)
 X-APPLE-CALENDAR-COLOR:#5AA9FF
 X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+X-LIC-LOCATION:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
 UID:hyrox-b1-2026-08-10@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260810T183000
-DTEND:20260810T193500
+DTSTART;TZID=Europe/Berlin:20260810T183000
+DTEND;TZID=Europe/Berlin:20260810T193500
 SUMMARY:Hyrox · Kraft B — Zug & Carries
 DESCRIPTION:Warmup 8 min: Schulterkreisen\, Pull-aparts\, Scapula-Hangs an 
  der Stange\, Cat-Cow\nKlimmzüge — 4 × 5–8 (oder Negative). Submaxima
@@ -35,8 +53,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-11@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260811T060000
-DTEND:20260811T064500
+DTSTART;TZID=Europe/Berlin:20260811T060000
+DTEND;TZID=Europe/Berlin:20260811T064500
 SUMMARY:Hyrox · Easy Run — 5 km
 DESCRIPTION:5 km bei 6:00–6:20 /km. Nasenatmung möglich\, Gespräch prob
  lemlos\nDanach: Rückenroutine (8 min) — ab heute jeden Tag\n\nWORAUF ES
@@ -53,8 +71,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-12@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260812T183000
-DTEND:20260812T192500
+DTSTART;TZID=Europe/Berlin:20260812T183000
+DTEND;TZID=Europe/Berlin:20260812T192500
 SUMMARY:Hyrox · Threshold — 3 × 6 min
 DESCRIPTION:15 min Einlaufen locker\n3 × 6 min @ 4:50–4:55 /km\, dazwisc
  hen 90 s Trabpause\n10 min Auslaufen\n\nWORAUF ES ANKOMMT:\nWenn der letzt
@@ -71,8 +89,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-13@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260813T183000
-DTEND:20260813T194000
+DTSTART;TZID=Europe/Berlin:20260813T183000
+DTEND;TZID=Europe/Berlin:20260813T194000
 SUMMARY:Hyrox · Kraft A — Beine & Push
 DESCRIPTION:Warmup 8 min: Beinpendel\, 90/90-Hüfte\, 15 Glute Bridges\, 10
   Bodyweight-Lunges/Seite\, Sprunggelenk-Mobility\nDB Front-Rack Squat — 
@@ -106,8 +124,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-15@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260815T100000
-DTEND:20260815T110000
+DTSTART;TZID=Europe/Berlin:20260815T100000
+DTEND;TZID=Europe/Berlin:20260815T110000
 SUMMARY:Hyrox · Compromised — 4 Runden
 DESCRIPTION:10 min locker zum Park traben (= Warmup)\n4 Runden: 800 m @ 4:5
  5–5:05 + 10 Burpee Broad Jumps + 20 Walking Lunges (Körpergewicht)\n10 
@@ -126,8 +144,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-16@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260816T100000
-DTEND:20260816T111000
+DTSTART;TZID=Europe/Berlin:20260816T100000
+DTEND;TZID=Europe/Berlin:20260816T111000
 SUMMARY:Hyrox · Long Run — 10 km
 DESCRIPTION:10 km komplett locker bei 6:00–6:15 /km\n\nWORAUF ES ANKOMMT:
  \nDer Long Run ist eine Grundlageneinheit\, kein Test. Wenn du versucht bi
@@ -143,8 +161,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-17@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260817T183000
-DTEND:20260817T193500
+DTSTART;TZID=Europe/Berlin:20260817T183000
+DTEND;TZID=Europe/Berlin:20260817T193500
 SUMMARY:Hyrox · Kraft B — Zug & Carries
 DESCRIPTION:Warmup 8 min: Schulterkreisen\, Pull-aparts\, Scapula-Hangs an 
  der Stange\, Cat-Cow\nKlimmzüge — 4 × 5–8 (oder Negative). Submaxima
@@ -166,8 +184,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-18@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260818T060000
-DTEND:20260818T064800
+DTSTART;TZID=Europe/Berlin:20260818T060000
+DTEND;TZID=Europe/Berlin:20260818T064800
 SUMMARY:Hyrox · Easy Run — 7 km
 DESCRIPTION:7 km bei 6:00–6:20 /km\nDanach Rückenroutine\n\nDanach: Rüc
  kenroutine 8 min.
@@ -182,8 +200,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-19@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260819T183000
-DTEND:20260819T193000
+DTSTART;TZID=Europe/Berlin:20260819T183000
+DTEND;TZID=Europe/Berlin:20260819T193000
 SUMMARY:Hyrox · Intervalle — 6 × 3 min
 DESCRIPTION:15 min Einlaufen\n6 × 3 min @ 4:25–4:30 /km\, dazwischen 90 
  s Trabpause\n10 min Auslaufen\n\nWORAUF ES ANKOMMT:\nVO2max-Reiz. Die letz
@@ -200,8 +218,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-20@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260820T183000
-DTEND:20260820T194000
+DTSTART;TZID=Europe/Berlin:20260820T183000
+DTEND;TZID=Europe/Berlin:20260820T194000
 SUMMARY:Hyrox · Kraft A — Beine & Push
 DESCRIPTION:Warmup 8 min: Beinpendel\, 90/90-Hüfte\, 15 Glute Bridges\, 10
   Bodyweight-Lunges/Seite\, Sprunggelenk-Mobility\nDB Front-Rack Squat — 
@@ -234,8 +252,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-22@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260822T100000
-DTEND:20260822T111500
+DTSTART;TZID=Europe/Berlin:20260822T100000
+DTEND;TZID=Europe/Berlin:20260822T111500
 SUMMARY:Hyrox · Compromised — 5 Runden
 DESCRIPTION:10 min zum Park traben\n5 Runden: 800 m @ 4:50–5:00 + 12 Burp
  ee Broad Jumps + 24 Walking Lunges\n10 min zurück traben\nOptional\, fall
@@ -255,8 +273,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-23@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260823T100000
-DTEND:20260823T112000
+DTSTART;TZID=Europe/Berlin:20260823T100000
+DTEND;TZID=Europe/Berlin:20260823T112000
 SUMMARY:Hyrox · Long Run — 12 km
 DESCRIPTION:12 km bei 5:55–6:10 /km\nLetzte 2 km optional bei 5:20\n\nDan
  ach: Rückenroutine 8 min.
@@ -271,8 +289,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-24@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260824T183000
-DTEND:20260824T193500
+DTSTART;TZID=Europe/Berlin:20260824T183000
+DTEND;TZID=Europe/Berlin:20260824T193500
 SUMMARY:Hyrox · Kraft B — Zug & Carries
 DESCRIPTION:Warmup 8 min: Schulterkreisen\, Pull-aparts\, Scapula-Hangs an 
  der Stange\, Cat-Cow\nKlimmzüge — 4 × 5–8 (oder Negative). Submaxima
@@ -295,8 +313,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-25@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260825T060000
-DTEND:20260825T065200
+DTSTART;TZID=Europe/Berlin:20260825T060000
+DTEND;TZID=Europe/Berlin:20260825T065200
 SUMMARY:Hyrox · Easy Run — 8 km
 DESCRIPTION:8 km bei 6:00–6:20 /km\nDanach Rückenroutine\n\nDanach: Rüc
  kenroutine 8 min.
@@ -311,8 +329,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-26@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260826T183000
-DTEND:20260826T193500
+DTSTART;TZID=Europe/Berlin:20260826T183000
+DTEND;TZID=Europe/Berlin:20260826T193500
 SUMMARY:Hyrox · Threshold — 5 × 5 min
 DESCRIPTION:15 min Einlaufen\n5 × 5 min @ 4:40–4:45 /km\, dazwischen 75 
  s Trabpause\n12 min Auslaufen\n\nWORAUF ES ANKOMMT:\nHärteste Laufeinheit
@@ -328,8 +346,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-27@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260827T183000
-DTEND:20260827T194000
+DTSTART;TZID=Europe/Berlin:20260827T183000
+DTEND;TZID=Europe/Berlin:20260827T194000
 SUMMARY:Hyrox · Kraft A — Beine & Push
 DESCRIPTION:Warmup 8 min: Beinpendel\, 90/90-Hüfte\, 15 Glute Bridges\, 10
   Bodyweight-Lunges/Seite\, Sprunggelenk-Mobility\nDB Front-Rack Squat — 
@@ -363,8 +381,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-29@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260829T100000
-DTEND:20260829T112000
+DTSTART;TZID=Europe/Berlin:20260829T100000
+DTEND;TZID=Europe/Berlin:20260829T112000
 SUMMARY:Hyrox · Compromised — 4 × 1000 m
 DESCRIPTION:10 min einlaufen\n4 Runden: 1000 m @ 4:45–4:55 + 15 Burpee Br
  oad Jumps + 30 Walking Lunges\n10 min auslaufen\nFalls ein Rucksack dabei 
@@ -383,8 +401,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-30@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260830T100000
-DTEND:20260830T113500
+DTSTART;TZID=Europe/Berlin:20260830T100000
+DTEND;TZID=Europe/Berlin:20260830T113500
 SUMMARY:Hyrox · Long Run — 14 km
 DESCRIPTION:14 km bei 5:50–6:05 /km — längster Lauf des Blocks\nLetzte
   3 km bei 5:15–5:20\, falls die Beine mitspielen\n\nDanach: Rückenrouti
@@ -400,8 +418,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-08-31@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260831T183000
-DTEND:20260831T190500
+DTSTART;TZID=Europe/Berlin:20260831T183000
+DTEND;TZID=Europe/Berlin:20260831T190500
 SUMMARY:Hyrox · Rückreise — optional 5 km locker
 DESCRIPTION:Optional 5 km ganz locker\, wenn die Reise es zulässt\nRücken
  routine auf jeden Fall\n\nWORAUF ES ANKOMMT:\nWenn die Reise anstrengend w
@@ -417,8 +435,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-09-01@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260901T183000
-DTEND:20260901T193500
+DTSTART;TZID=Europe/Berlin:20260901T183000
+DTEND;TZID=Europe/Berlin:20260901T193500
 SUMMARY:Hyrox · Gym 1 — Ski & Row Technik
 DESCRIPTION:SkiErg: 10 min Technikspiel (Damping 5–7)\, dann 6 × 250 m l
  ocker\, 60 s Pause\n→ Fokus: Hüfte treibt\, Arme führen nur. Bei 193 c
@@ -440,8 +458,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-09-02@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260902T060000
-DTEND:20260902T065500
+DTSTART;TZID=Europe/Berlin:20260902T060000
+DTEND;TZID=Europe/Berlin:20260902T065500
 SUMMARY:Hyrox · Reps — 6 × 400 m
 DESCRIPTION:15 min Einlaufen\n6 × 400 m @ 4:05–4:15 /km\, 200 m Trabpaus
  e\n10 min Auslaufen\n\nWORAUF ES ANKOMMT:\nKurz\, knackig\, wenig Ermüdun
@@ -458,8 +476,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-09-03@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260903T183000
-DTEND:20260903T193500
+DTSTART;TZID=Europe/Berlin:20260903T183000
+DTEND;TZID=Europe/Berlin:20260903T193500
 SUMMARY:Hyrox · Gym 2 — Sled & Wall Balls
 DESCRIPTION:Sled Push: 6 × 15 m mit ~60 % Renngewicht. Tief\, Arme lang\, 
  kleine schnelle Schritte\, Blick nach unten\nSled Pull: 6 × 12\,5 m leich
@@ -492,8 +510,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-09-05@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260905T100000
-DTEND:20260905T110000
+DTSTART;TZID=Europe/Berlin:20260905T100000
+DTEND;TZID=Europe/Berlin:20260905T110000
 SUMMARY:Hyrox · BENCHMARK — Mini-Simulation
 DESCRIPTION:15 min Warmup\nDann alles am Stück\, Zeit nehmen:\n1000 m Ski 
  → 1000 m Lauf → 500 m Row → 1000 m Lauf → 40 m Burpee Broad Jumps 
@@ -515,8 +533,8 @@ BEGIN:VEVENT
 UID:hyrox-b1-2026-09-06@twentyfour.industries
 DTSTAMP:20260810T120000Z
 SEQUENCE:0
-DTSTART:20260906T100000
-DTEND:20260906T112500
+DTSTART;TZID=Europe/Berlin:20260906T100000
+DTEND;TZID=Europe/Berlin:20260906T112500
 SUMMARY:Hyrox · Long Run — 12 km locker
 DESCRIPTION:12 km ganz locker. Deload — 6:10–6:25 /km ist völlig okay\
  n\nWORAUF ES ANKOMMT:\nBlockabschluss. Danach: Zahlen zusammenstellen und 
@@ -527,29 +545,6 @@ BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
 DESCRIPTION:Long Run — 12 km locker
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:hyrox-b1-rueckenroutine@twentyfour.industries
-DTSTAMP:20260810T120000Z
-DTSTART:20260810T213000
-DTEND:20260810T213800
-RRULE:FREQ=DAILY;UNTIL=20260906T213000
-SUMMARY:Rückenroutine (8 min)
-DESCRIPTION:Curl-up (McGill) — 3 × 8 s halten pro Seite\, Hände unter d
- er Lende\nSide Plank — 3 × 25–40 s pro Seite\nBird Dog — 3 × 8 pro
-  Seite\, langsam\, kein Ausweichen im Becken\nGlute Bridge — 2 × 15\, o
- ben 2 s halten\nHüftbeuger-Stretch (halb kniend) — 2 × 45 s pro Seite\
- n90/90 Hüftrotation — 8 Wechsel pro Seite\n\nNicht optional. Sandbag Lu
- nges und Sled Pull sind die riskantesten Stationen — Toleranz wird jetzt
-  aufgebaut\, nicht im Oktober.\n\nABBRUCHKRITERIEN: Schmerz der ins Bein z
- ieht\, Taubheit/Kribbeln\, oder Morgensteifigkeit über 30 min → Einheit
-  streichen und ärztlich abklären.
-CATEGORIES:Hyrox\,Prehab
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT10M
-DESCRIPTION:Rückenroutine (8 min)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
